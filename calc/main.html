@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <script>
+            function calc(choice){
+                let a=Number(document.getElementById("number1").value);
+                let b=Number(document.getElementById("number2").value);
+                let c;
+            switch (choice){
+                case '+':
+                    c=a+b;
+                    console.log(c);
+                    alert(c);
+                    break;
+                case '-':
+                    c=a-b;
+                    console.log(c);
+                    alert(c);
+                    break;
+                case '*':
+                    c=a*b;
+                    console.log(c);
+                    alert(c);
+                    break;
+                case '/':
+                    c=a/b;
+                    console.log(c);
+                    alert(c);
+                    break;
+                case 'floor':
+                    c=Math.floor(a/b);
+                    console.log(c);
+                    alert(c);
+                    break;
+                case '==':
+                    if(a==b){
+                        alert("equal");
+                    }else{
+                        alert("notequal")
+                    }
+                    break;
+                default:
+                    alert("choose a valid operator");
+                    break;            
+            }       
+            }
+        </script>
+    <div>Calculator</div>
+    <div class="calculator">
+        <div class="elements">
+        <label for="number1">Number one<label>
+            <input placeholder="Enter number" value="" name="number1" id="number1">
+            <br>
+        <label for="number2">Number two<label>
+            <input placeholder="Enter number" value="" name="number2" id="number2">
+        <br>
+        <!-- <label for="answer">Answer<label>
+            <input placeholder="Answer" value="" name="number2" id="answer">         -->
+        </div>
+        <br>
+        <div class="operators">
+            <button onclick="calc('+')">+</button>
+            <button onclick="calc('-')">-</button>
+            <button onclick="calc('/')">/</button>
+            <button onclick="calc('*')">*</button>
+            <button onclick="calc('floor')">//</button>
+            <button onclick="calc('==')">==</button>
+        </div>
+    </div>
+    </body>
+</html>

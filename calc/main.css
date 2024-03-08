@@ -1,0 +1,19 @@
+.calculator{
+    border: 3px solid black;
+    width: 500px;
+    height: 250px;
+    background-color: rgb(226, 219, 88);
+}
+.elements{
+    margin-top: 20px;
+    grid-row: 1fr 1fr 1fr;
+    width: 100px;
+    position: relative;
+    margin-left: 50px;
+}
+.operators{
+    margin-left: 150px;
+}
+.button{
+    width: 30px;
+}

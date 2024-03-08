@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navele{
+    margin-left: 10px;
+    position: relative;
+    left: 1200px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:500px;
+}
+/* .ul{
+    padding: 10px 10px;
+    text-align: center;
+} */
+
+.description{
+    position: relative;
+    opacity: 1;
+    text-align:justify;
+    margin: 5%;
+}
+/* .image{
+    width: 2200px;
+    height: 1000px;
+
+} */
+.logo{
+    /* display: grid;
+    grid-template-columns: 4fr;
+    grid-template-areas: "logo"; */
+    position: relative;
+    top: 7px;
+    left: 5px;
+
+}
+.dm-serif display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.dm-serif display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.uniquifier {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.boxa{
+    grid-area: box1;
+    /* background-color: blue; */
+    grid-template-rows: 2fr 1fr 1fr;
+ }
+ .boxb{
+    grid-area: box2;
+     /* background-color: rgb(255, 0, 0);  */
+ }
+ .boxc{
+    grid-area: box3;
+     /* background-color: rgb(30, 255, 0); */
+ }
+ .boxd{
+    grid-area: box4;
+     /* background-color: rgb(204, 0, 255); 
+     */
+ }
+ .boxe{
+    grid-area: box5;
+     /* background-color: rgb(255, 136, 0);  */
+ }
+ .boxf{
+    grid-area: box6;
+     /* background-color: rgb(255, 0, 225);  */
+ }
+ .boxcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box4 box5 box6";
+    grid-gap: 50px;
+    padding-top: 100px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 270px;
+}
+.commonbox{
+    color: rgb(0, 0, 0);
+   font-weight: 500;
+   width: 290px;
+   height: 450px;
+   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+   border: 3px solid black;
+   border-radius: 5px;
+   position: relative;
+   left: 20px;
+   display: grid;
+   grid-template-rows: 3fr 1fr 1fr;
+   row-gap: 3px;
+   padding: 20px;
+}
+.commonbox p{
+    position: relative;
+    left: 22px;
+    top: 5px;
+}
+.commonbox:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

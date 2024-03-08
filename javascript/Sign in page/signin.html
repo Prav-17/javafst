@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="signin.css">
+    </head>
+    <body>
+        <div id="boxcontainer">
+        <h2>Sign up</h2>
+        <h3>Welcome New User!</h3>
+        <div id="elements">
+            <div class="mandatory">
+                <label for="name">Name:</label>
+            <input type="text" id="name" value="" placeholder="your name" required >
+            <p id="error"></p>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+            <input  type="email" id="email" value="" placeholder="your email"></div>
+            <div>
+                <label for="Age">Age:</label>
+            <input type="number" id="Age" value="" placeholder="your age"></div>
+            <div>
+                <label for="phone">Phone number:</label>
+            <input type="tel" id="phone" value="" placeholder="your number"></div>
+            <div id="gender"><label for="gender">Gender :</label>
+            <input type="radio" id="male" name="gender" style="height: 13px;"> Male
+            <input type="radio" id="female" name="gender" style="height: 13px;"> Female</div>
+            <div><button id="submit" onclick="submit()">Submit</button>
+            <button> Reset</button></div>
+            </div>
+        </div>
+        <script src="signin.js"></script>
+        <script>
+            function submit(){ 
+                alert("Thank you");
+            }
+            let submit=document.getElementById("submit");
+            // submit.onclick=submit;
+            submit.addEventListener("click",submit);
+
+        </script>  
+    </body>
+
+</html>

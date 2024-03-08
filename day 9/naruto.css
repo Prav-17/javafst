@@ -1,0 +1,89 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+}
+h2{
+    margin-top: 0%;
+    margin-bottom: 0;
+    padding-bottom: 0%;
+    font-style: normal;
+    font-size: 80px;
+    font-family: 'Honk', system-ui;
+    font-weight: 100;
+}
+p{
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.subheading1{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+button{
+    border: 3px solid rgb(255, 255, 255);
+    padding: 20px; background-color: rgb(255, 119, 0);
+    border-radius: 20px;
+    color: white; opacity: 1;
+    margin: 10px;
+    margin-left: 50px;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    margin: 1px solid white;
+}
+button:focus{
+    cursor:progress;
+}
+.bodycontainer{
+    /* background-image: url("Naruto.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+}
+.logo{
+    position: absolute;
+    top: 100px;
+    left: 1600px;
+    width: 10%;
+
+    
+}
+.img1{
+    position: absolute;
+    top:70vh;
+    right: 1500px;
+    width: 10%;
+}
+.searchbar{
+    border: 3px solid black;
+    background-color: rgb(197, 189, 189);
+    border-radius: 5px;
+    left: 165vh;
+    bottom: 7vh;
+    width: 20vh;
+    height: 3vh;
+    position: sticky;
+}
+.enquiry{ /*exact attribute selector*/
+    position: fixed;
+    left: 93vw;
+    top: 85vh;
+}
+.searchbar:active{
+    border: 5px solid orange;
+}
+.searchbar:focus{
+    background-color: blanchedalmond;
+}
+article::first-line{
+    font-weight:100;
+    color:coral
+}

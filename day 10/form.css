@@ -1,0 +1,51 @@
+form{
+    border: 3px solid black;
+    width: 600px;
+    height: 300px;
+    border-radius: 7px;
+    /* box-shadow: 5px 5px rgb(87, 86, 86,0.5); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    left: 600px;
+    top: 300px;
+}
+.textbox{
+    width: 200px;
+    height: 100px;
+}
+.caveat{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    position: relative;
+    left: 800px;
+    top: 250px;
+  }
+/*form:focus{
+    background-color: rgb(33, 32, 33);
+    border: purple;
+}*/
+/*.box:focus{
+    background-color: rgb(33, 32, 33);
+    border: purple;
+}*/
+.box{
+    transform: scale(1);
+}
+form:hover{
+    /* animation: box1 5s linear 0s 1 normal; */
+    /* background-color: rgb(194, 118, 189); */
+    transform: scale(1.1);
+    cursor: pointer;
+}
+@keyframes box1 {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+
+}

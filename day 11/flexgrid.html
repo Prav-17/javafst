@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex and grid</title>
+        <style>
+           *{
+            margin: 0px;
+            padding: 0px;
+           }
+            .boxa{
+               grid-area: box1;
+               background-color: blue;
+               grid-template-rows: 2fr 1fr 1fr;
+            }
+            .boxb{
+               grid-area: box2;
+                background-color: rgb(255, 0, 0); 
+            }
+            .boxc{
+               grid-area: box3;
+                background-color: rgb(30, 255, 0);
+            }
+            .boxd{
+               grid-area: box4;
+                background-color: rgb(204, 0, 255); 
+               
+            }
+            .boxe{
+               grid-area: box5;
+                background-color: rgb(255, 136, 0); 
+            }
+            .boxf{
+               grid-area: box6;
+                background-color: rgb(255, 0, 225); 
+            }
+            
+           /* .boxcontainer{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                position: relative;
+                top: 200px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 5%;
+                padding-right: 5%;
+                border: 5px solid black;
+            }*/
+            .boxcontainer{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-areas: 
+                "box1 box2 box3"
+                "box4 box5 box6";
+                grid-gap: 20px;
+                border: 3px solid black;
+                padding-top: 50px;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+                padding-left: 50px;
+            }
+            .commonbox{
+                color: black;
+               font-weight: 500;
+               width: 250px;
+                height: 400px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2 style="position: relative;bottom: -20px; text-align:center">FLEX</h2>
+        <div class="boxcontainer">
+        <div class="boxa commonbox">
+            <img src="Pizza_Box_Mockup_1-1.jpg" width="250px" alt="img"/>
+            <p>
+                Product 1
+            </p>
+            <p>
+                Price
+            </p>
+        </div>
+        <div class="boxb commonbox"> Box 2</div>
+        <div class="boxc commonbox"> Box 3</div>
+        <div class="boxd commonbox">Box 4</div>
+        <div class="boxe commonbox"> Box 5</div>
+        <div class="boxf commonbox"> Box 6</div>
+        </div>
+
+    </body>
+</html>
