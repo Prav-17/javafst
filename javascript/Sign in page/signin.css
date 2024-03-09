@@ -6,14 +6,14 @@
 #boxcontainer{
     display: grid;
     border: none;
-    max-height: 400px;
-    max-width: 300px;
+    max-height: 600px;
+    max-width: 400px;
     padding: 50px;
     gap: 20px;
     border-radius: 10px;
     position: absolute;
-    left: 750px;
-    top: 250px;
+    left: 780px;
+    top: 220px;
     background-color: rgb(246,246,246);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
@@ -21,7 +21,7 @@
 }
 #elements{
     display: grid;
-    gap: 15px;
+    gap: 5px;
 }
 button{
     background-color: rgb(14,17,17);
@@ -39,12 +39,13 @@ body{
 input{
     background-color: rgb(217, 205, 183);
     height: 20px;
+    width: 300px;
     border-radius: 5px;
     padding: 3px;
 }
-.mandatory{
+.textbox{
     display: grid;
-    grid-template-rows: 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 /* #gender{
     margin: 0%;
@@ -53,4 +54,8 @@ input{
 button:hover{
     background-color: rgb(169, 61, 61);
     transition: 0.25s ease-in-out;
+}
+.error{
+    margin-top: 7px;
+    color: red;
 }
